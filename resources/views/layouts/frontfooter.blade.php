@@ -48,6 +48,9 @@
 </footer>
 
 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 <script src="{{ asset('public/front/js/script.js') }}"></script>
 </body>
 

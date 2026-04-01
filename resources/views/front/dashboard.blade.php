@@ -325,8 +325,38 @@
                 @endforeach
             @endif
         </div>
+        
     </div>
 </section>
+
+<!-- add slider -->
+
+<div class="leding_slider">
+   <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
+      <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+      <div class="step_info">
+         <p class="step_info_p">Jogging Track</p>
+      </div>
+   </div>
+
+    <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
+      <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+      <div class="step_info">
+         <p class="step_info_p">Jogging Track</p>
+      </div>
+   </div>
+
+    <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
+      <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+      <div class="step_info">
+         <p class="step_info_p">Jogging Track</p>
+      </div>
+   </div>
+</div>
+
+<!-- add slider -->
+
+
 <!-- company -->
 <section class="mt-100">
     <div class="container">
@@ -506,8 +536,6 @@
     </div>
 </section>
     
-@include('layouts.frontfooter')
-
 <script>
 function toggleDropdown() {
     document.getElementById('amenityOptions').classList.toggle('show');
@@ -537,6 +565,7 @@ function filterAmenities(name, slug) {
 
             if (firstVisible) {
                 item.classList.add('large');
+                // item.classList.add('large');/---------------------------------
                 firstVisible = false;
             }
         });
@@ -587,6 +616,20 @@ document.addEventListener('click', function(e) {
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function () {
+
+    if ($('.leding_slider').length && !$('.leding_slider').hasClass('slick-initialized')) {
+        $('.leding_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            arrows: true,
+            dots: false,
+            infinite: true,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+        });
+    }
 
     // Disposable emails
     const disposableDomains = [
@@ -696,3 +739,5 @@ $(document).ready(function () {
     });
 });
 </script>
+
+@include('layouts.frontfooter')
