@@ -1,0 +1,77 @@
+<!-- Bento Grid -->
+            <div class="container">
+                <div id="amenity-grid" class="bento-grid">
+                    <!-- 1. Olympic Pool (Large) -->
+                    <div class="amenity-card large"
+                        style="background-image: url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=80');">
+                        <div class="amenity-overlay"></div>
+                        <div class="amenity-content">
+                            <div class="amenity-icon-box">
+                                <i data-lucide="waves"></i>
+                            </div>
+                            <h3 class="amenity-title text-xl">Olympic Pool</h3>
+                            <p class="amenity-desc">25m temperature-controlled swimming pool</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Fitness Center (Small) -->
+                    <div class="amenity-card"
+                        style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80');">
+                        <div class="amenity-overlay"></div>
+                        <div class="amenity-content">
+                            <div class="amenity-icon-box">
+                                <i data-lucide="dumbbell"></i>
+                            </div>
+                            <h3 class="amenity-title">Fitness Center</h3>
+                        </div>
+                    </div>
+
+                    <!-- 3. Green Parks (Small) -->
+                    <div class="amenity-card"
+                        style="background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80');">
+                        <div class="amenity-overlay"></div>
+                        <div class="amenity-content">
+                            <div class="amenity-icon-box">
+                                <i data-lucide="trees"></i>
+                            </div>
+                            <h3 class="amenity-title">Green Parks</h3>
+                        </div>
+                    </div>
+
+                    <!-- 4. Clubhouse Restaurant (Medium) -->
+                    <div class="amenity-card medium"
+                        style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80');">
+                        <div class="amenity-overlay"></div>
+                        <div class="amenity-content">
+                            <div class="amenity-icon-box">
+                                <i data-lucide="utensils"></i>
+                            </div>
+                            <h3 class="amenity-title">Clubhouse Restaurant</h3>
+                        </div>
+                    </div>
+
+                    <!-- 5. Community Hall (Small) -->
+                    <div class="amenity-card"
+                        style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&q=80');">
+                        <div class="amenity-overlay"></div>
+                        <div class="amenity-content">
+                            <div class="amenity-icon-box">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3 class="amenity-title">Community Hall</h3>
+                        </div>
+                    </div>
+
+                    <!-- 6. Security (Small) -->
+                    <div class="amenity-card"
+                        style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80');">
+                        <div class="amenity-overlay"></div>
+                        <div class="amenity-content">
+                            <div class="amenity-icon-box">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <h3 class="amenity-title">24/7 Security</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -1,0 +1,384 @@
+@media (min-width: 1919px) {
+
+    .container,
+    .ym-container {
+        max-width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 1537px) {
+    .about_title {
+        font-size: 64px;
+        line-height: 68px;
+    }
+
+    .about_header {
+        gap: 70px;
+    }
+
+    .manifesto-section {
+        background-position: 47% 27%;
+    }
+
+    /* .about_header{
+        padding-top: 60px;
+    } */
+    .stats-grid {
+        /*gap: 150px;*/
+    }
+
+}
+
+@media (max-width: 1441px) {
+    .project-cat {
+        font-size: 16px;
+    }
+
+    .project_title {
+        font-size: 48px;
+    }
+
+    .price {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .about_title {
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+    .manifesto-section {
+        padding-top: 30px;
+        background-position: 42% 48%;
+
+    }
+
+    .manifesto-section .container {
+        padding: 30px 0;
+    }
+
+    .stat-card {
+        padding: 1rem;
+        font-size: 14px;
+        min-height: 100%;
+    }
+
+    .stat-value {
+        font-size: 36px;
+    }
+
+    .value-card {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .value-index {
+        font-size: 60px;
+    }
+
+    .value-title {
+        font-size: 28px;
+    }
+
+    .slider {
+        height: 700px;
+    }
+
+    .contact-grid {
+        gap: 100px;
+    }
+
+    .contact-info {
+        padding-left: 100px;
+    }
+
+    .aminities_stats>div {
+        place-content: flex-end;
+    }
+}
+
+@media (max-width: 1367px) {
+    .about_title {
+        font-size: 54px;
+        line-height: 68px;
+    }
+    .project-bg img{object-fit:contain;}
+}
+
+@media (max-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
+
+    .project-cat {
+        display: none;
+    }
+
+    .project-card.active .project-cat {
+        display: block;
+    }
+
+    .project_title {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+
+    .project-details {
+        font-size: 14px;
+    }
+
+    .about_title {
+        font-size: 52px;
+        line-height: 68px;
+    }
+
+    .manifesto-section {
+        background-position: 32% 48%;
+        background-size: contain;
+    }
+
+    .stats-grid {
+        gap: 0px;
+    }
+
+    .amenity-select, .dropdown-trigger {
+        min-width: 200px;
+        width: 300px;
+        font-size: 30px;
+    }
+
+    .aminities-count {
+        font-size: 52px;
+    }
+
+    .slider {
+        height: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .amenities-grid {
+        padding: 0;
+    }
+
+    .contact-grid {
+        gap: 50px;
+    }
+
+    .contact-info {
+        padding-left: 50px;
+    }
+
+    .contact-info iframe {
+        width: 100% !important;
+    }
+
+    .manifesto-section {
+        background-position: 52% 46%;
+        background-size: auto;
+    }
+
+    .stats-grid {
+        gap: 10px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .value-card {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .value-title {
+        font-size: 24px;
+    }
+
+    .info-block:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .deskbtn {
+        display: none;
+    }
+
+    .moblogo {
+        display: inline-block;
+    }
+
+    .mobile_slider {
+        display: none;
+    }
+
+    .about_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .amenities-grid {
+        display: grid;
+        grid-template-areas: "a b c d e";
+        grid-template-columns: repeat(5, 80vw);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 20px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .grid-item {
+        scroll-snap-align: start;
+        min-width: 0;
+    }
+
+    /* Scrollbar Styling */
+    .amenities-grid::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .amenities-grid::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 10px;
+        margin: 0 20px;
+    }
+
+    .amenities-grid::-webkit-scrollbar-thumb {
+        background: #009D53;
+        border-radius: 10px;
+    }
+
+    .slider {
+        height: 399px;
+    }
+
+    .ft_bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ft_bottom>div:nth-child(1) {
+        order: 3;
+    }
+
+    .ft_bottom>div:nth-child(2) {
+        order: 1;
+    }
+
+    .ft_bottom>div:nth-child(3) {
+        order: 2;
+    }
+
+}
+
+@media (max-width: 577px) {
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    header {
+        padding: 0;
+        height: 50px;
+        max-width: 100%;
+    }
+
+    .projects-section {
+        margin-top: 52px;
+    }
+
+    .ym-project {
+        color: var(--color-dark) !important;
+        opacity: 1;
+        display: block;
+        max-width: 100%;
+        transform: translateY(0px);
+    }
+
+    .btn-explore,
+    .project-details {
+        color: var(--color-dark);
+        border-color: var(--color-dark);
+    }
+
+    .project_title {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 10px;
+    }
+
+    .price {
+        margin-bottom: 15px;
+    }
+
+    .manifesto-section {
+        background-image: none;
+    }
+
+    .about_title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .about_header,
+    .stats-grid,
+    .values-grid,
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .manifesto-section .container {
+        padding: 10px 0;
+    }
+
+    .aminities_stats>div {
+        place-content: center;
+    }
+
+    .aminities_head,
+    .top_footer {
+        flex-direction: column;
+    }
+
+    .slider {
+        height: 208px;
+    }
+
+    .contact-info {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: 30px;
+    }
+
+    .ft_logos,
+    .top_footer {
+        gap: 20px;
+    }
+
+    .ft_bottom {
+        text-align: center;
+    }
+}
+
+@media (max-width: 431px) {
+    .slider {
+        height: 177px;
+    }
+}
