@@ -14,7 +14,8 @@
             <div class="project-content">
                 <div class="project-top">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('public/front/images/head-logo-1.svg') }}" alt="Bungalow" class="img-fluid" height="48" width="48">
+                        <img src="{{ asset('public/front/images/head-logo-1.svg') }}" alt="Bungalow" class="img-fluid"
+                            height="48" width="48">
                         <span class="project-cat" style="flex:1;">Bungalow & Plots - (200 to 1000sq yard)</span>
                     </div>
                 </div>
@@ -23,10 +24,12 @@
                     <div class="ym-project">
                         <h6 class="project_subtitle">Bellevue Vieraaa</h6>
                         <h2 class="project_title">Premium 3 & 4 BHK Villas <br> Designed for Refined Living</h2>
-                        <p class="project-details">World-class amenities set within a thoughtfully planned residential enclave that blends comfort, space, and everyday elegance.</p>
+                        <p class="project-details">World-class amenities set within a thoughtfully planned residential
+                            enclave that blends comfort, space, and everyday elegance.</p>
                         <p class="start">Starting from</p>
                         <p class="price">₹53 Lakhs*</p>
-                        <a href="{{ url('https://bellevue.co.in/') }}" target="_blank" class="btn-explore">Explore Residences</a>
+                        <a href="{{ url('https://bellevue.co.in/') }}" target="_blank" class="btn-explore">Explore
+                            Residences</a>
                     </div>
                 </div>
             </div>
@@ -51,10 +54,11 @@
                     <div class="ym-project">
                         <h6 class="project_subtitle">Bellevue Luxuria</h6>
                         <h2 class="project_title">Exclusive Luxury Farmhouses <br> Crafted for Elevated Living</h2>
-                        <p class="project-details">Expansive private farmhouses designed for those who value space, serenity, and a lifestyle rooted in nature with modern comforts.</p>
+                        <p class="project-details">Expansive private farmhouses designed for those who value space,
+                            serenity, and a lifestyle rooted in nature with modern comforts.</p>
                         <p class="start">Starting from</p>
                         <p class="price">₹1.71 Cr*</p>
-                        <a href="javascript:viod(0)"  class="btn-explore">Explore Farmhouses</a>
+                        <a href="javascript:viod(0)" class="btn-explore">Explore Farmhouses</a>
                     </div>
                 </div>
             </div>
@@ -79,10 +83,12 @@
                     <div class="ym-project">
                         <h6 class="project_subtitle">Bellevue The Club</h6>
                         <h2 class="project_title">Resort Living & Experiences <br> For Leisure and Celebration</h2>
-                        <p class="project-details">A premium lifestyle destination offering curated hospitality, refined experiences, and world-class leisure amenities.</p>
+                        <p class="project-details">A premium lifestyle destination offering curated hospitality, refined
+                            experiences, and world-class leisure amenities.</p>
                         <p class="start" style=" margin-bottom: 10px; ">Memberships Start from 1.50 Cr*</p>
                         {{-- <p class="price">₹53 Lakhs*</p> --}}
-                        <a href="{{ url('https://www.bellevuetheclub.com') }}" target="_blank" class="btn-explore">Explore The Club</a>
+                        <a href="{{ url('https://www.bellevuetheclub.com') }}" target="_blank"
+                            class="btn-explore">Explore The Club</a>
                     </div>
                 </div>
             </div>
@@ -107,11 +113,13 @@
                 <!-- <h3 class="mobile-project-title">Bellevue Viera</h3> -->
                 <div class="ym-project">
                     <h6 class="project_subtitle">Bellevue Vieraaa</h6>
-                    <h2 class="project_title">Premium 3 & 4 BHK Villas <br>  Designed for Refined Living</h2>
-                    <p class="project-details">World-class amenities set within a thoughtfully planned residential enclave that blends comfort, space, and everyday elegance.</p>
+                    <h2 class="project_title">Premium 3 & 4 BHK Villas <br> Designed for Refined Living</h2>
+                    <p class="project-details">World-class amenities set within a thoughtfully planned residential
+                        enclave that blends comfort, space, and everyday elegance.</p>
                     <p class="start">Starting from</p>
                     <p class="price">₹53 Lakhs*</p>
-                    <a href="{{ url('https://bellevue.co.in/') }}" target="_blank" class="btn-explore">Explore Residences</a>
+                    <a href="{{ url('https://bellevue.co.in/') }}" target="_blank" class="btn-explore">Explore
+                        Residences</a>
                 </div>
             </div>
         </div>
@@ -131,10 +139,11 @@
                 <div class="ym-project">
                     <h6 class="project_subtitle">Bellevue Luxuria</h6>
                     <h2 class="project_title">Exclusive Luxury Farmhouses <br> Crafted for Elevated Living</h2>
-                    <p class="project-details">Expansive private farmhouses designed for those who value space, serenity, and a lifestyle rooted in nature with modern comforts.</p>
+                    <p class="project-details">Expansive private farmhouses designed for those who value space,
+                        serenity, and a lifestyle rooted in nature with modern comforts.</p>
                     <p class="start">Starting from</p>
                     <p class="price">₹1.71 Cr*</p>
-                    <a href="javascript:viod(0)"  class="btn-explore">Explore Farmhouses</a>
+                    <a href="javascript:viod(0)" class="btn-explore">Explore Farmhouses</a>
                 </div>
             </div>
         </div>
@@ -153,11 +162,14 @@
                 <!-- <h3 class="mobile-project-title">Bellevue The Club</h3> -->
                 <div class="ym-project">
                     <h6 class="project_subtitle">Bellevue The Club</h6>
-                    <h2 class="project_title">Resort Living & Destination Experiences <br>  Created for Leisure and Celebration</h2>
-                    <p class="project-details">A landmark lifestyle destination featuring premium hospitality, curated experiences, and world-class leisure amenities.</p>
+                    <h2 class="project_title">Resort Living & Destination Experiences <br> Created for Leisure and
+                        Celebration</h2>
+                    <p class="project-details">A landmark lifestyle destination featuring premium hospitality, curated
+                        experiences, and world-class leisure amenities.</p>
                     <p class="start">Memberships Available</p>
                     {{-- <p class="price">₹53 Lakhs*</p> --}}
-                    <a href="{{ url('https://www.bellevuetheclub.com/') }}" target="_blank" class="btn-explore">Explore The Club</a>
+                    <a href="{{ url('https://www.bellevuetheclub.com/') }}" target="_blank" class="btn-explore">Explore
+                        The Club</a>
                 </div>
             </div>
         </div>
@@ -170,9 +182,11 @@
     <!-- Header -->
     <div class="container" id="about">
         <div class="about_header flex">
-            <h2 class="about_title">Developing with Purpose. <br>  Delivering with Integrity.</h2>
+            <h2 class="about_title">Developing with Purpose. <br> Delivering with Integrity.</h2>
             <p>
-                Each development by Davda Infrastructure is guided by thoughtful planning, disciplined execution, and a long-term vision. We focus on creating well-designed communities that support modern living while delivering enduring value for homeowners and investors alike.
+                Each development by Davda Infrastructure is guided by thoughtful planning, disciplined execution, and a
+                long-term vision. We focus on creating well-designed communities that support modern living while
+                delivering enduring value for homeowners and investors alike.
 
             </p>
         </div>
@@ -218,7 +232,8 @@
             <div class="value-card group">
                 <span class="value-index">01</span>
                 <h3 class="value-title">Thoughtful Architecture</h3>
-                <p class="value-desc">Every project is designed with careful attention to space planning, natural light, ventilation, and everyday functionality.</p>
+                <p class="value-desc">Every project is designed with careful attention to space planning, natural light,
+                    ventilation, and everyday functionality.</p>
                 <div class="value-border">
                     <div class="value-border-active"></div>
                 </div>
@@ -227,7 +242,8 @@
             <div class="value-card group">
                 <span class="value-index">02</span>
                 <h3 class="value-title">Quality Construction</h3>
-                <p class="value-desc">We follow proven construction practices, quality materials, and strict supervision to ensure long-term durability and peace of mind.</p>
+                <p class="value-desc">We follow proven construction practices, quality materials, and strict supervision
+                    to ensure long-term durability and peace of mind.</p>
                 <div class="value-border">
                     <div class="value-border-active"></div>
                 </div>
@@ -236,7 +252,8 @@
             <div class="value-card group">
                 <span class="value-index">03</span>
                 <h3 class="value-title">Community-Centric Living</h3>
-                <p class="value-desc">Our developments are planned to encourage security, greenery, shared amenities, and a balanced lifestyle for families.</p>
+                <p class="value-desc">Our developments are planned to encourage security, greenery, shared amenities,
+                    and a balanced lifestyle for families.</p>
                 <div class="value-border">
                     <div class="value-border-active"></div>
                 </div>
@@ -264,9 +281,9 @@
                     <ul class="dropdown-options" id="amenityOptions">
                         <li onclick="filterAmenities('All Amenities', 'all')">All Amenities</li>
                         @foreach($categories as $cat)
-                            <li onclick="filterAmenities('{{ addslashes($cat->category_title) }}', '{{ $cat->url }}')">
-                                {{ $cat->category_title }}
-                            </li>
+                        <li onclick="filterAmenities('{{ addslashes($cat->category_title) }}', '{{ $cat->url }}')">
+                            {{ $cat->category_title }}
+                        </li>
                         @endforeach
                     </ul>
                 </div>
@@ -288,74 +305,100 @@
     <div class="container">
         <div class="amenities-grid" id="amenity-grid">
             @if($amenities->isEmpty())
-                <p class="text-center py-5">No amenities found.</p>
+            <p class="text-center py-5">No amenities found.</p>
             @else
-                @foreach($amenities as $item)
-                    <div class="grid-item" data-category="{{ $item->category_slug }}" style="display:block;">
-                        @php
-                            $imgPath = '';
-                            if (is_string($item->image)) {
-                                $imgPath = trim($item->image);
-                            } elseif (is_array($item->image) && !empty($item->image)) {
-                                $imgPath = trim($item->image[0] ?? '');
-                            }
+            @foreach($amenities as $item)
+            <div class="grid-item" data-category="{{ $item->category_slug }}" style="display:block;">
+                @php
+                $imgPath = '';
+                if (is_string($item->image)) {
+                $imgPath = trim($item->image);
+                } elseif (is_array($item->image) && !empty($item->image)) {
+                $imgPath = trim($item->image[0] ?? '');
+                }
 
-                            $finalImage = '';
-                            if ($imgPath) {
-                                if (filter_var($imgPath, FILTER_VALIDATE_URL)) {
-                                    $finalImage = $imgPath; // external
-                                } else {
-                                    $finalImage = asset('public/PropertyImage/' . ltrim($imgPath, '/')); // local
-                                }
-                            }
-                        @endphp
+                $finalImage = '';
+                if ($imgPath) {
+                if (filter_var($imgPath, FILTER_VALIDATE_URL)) {
+                $finalImage = $imgPath; // external
+                } else {
+                $finalImage = asset('public/PropertyImage/' . ltrim($imgPath, '/')); // local
+                }
+                }
+                @endphp
 
-                        @if($finalImage)
-                            <img src="{{ $finalImage }}" alt="{{ $item->title }}" class="img-fluid">
-                        @else
-                            <div class="placeholder text-center py-4 bg-light rounded">
-                                <p>No image available</p>
-                            </div>
-                        @endif
+                @if($finalImage)
+                <img src="{{ $finalImage }}" alt="{{ $item->title }}" class="img-fluid">
+                @else
+                <div class="placeholder text-center py-4 bg-light rounded">
+                    <p>No image available</p>
+                </div>
+                @endif
 
-                        <div class="step_info">
-                            <p class="step_info_p">{{ $item->title }}</p>
-                        </div>
-                    </div>
-                @endforeach
+                <div class="step_info">
+                    <p class="step_info_p">{{ $item->title }}</p>
+                </div>
+            </div>
+            @endforeach
             @endif
         </div>
-        
+
     </div>
+
+        <!-- add slider -->
+  <div class="container">
+    <div class="the_life_main">
+        <div class="leding_slider">
+            <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+            <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+            <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+        </div>
+        <div class="the_life_right">
+            <div class="grid-item">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
+                <div class="step_info">
+                <p class="step_info_p">Jogging Track</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- add slider -->
+
 </section>
-
-<!-- add slider -->
-
-<div class="leding_slider">
-   <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
-      <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-      <div class="step_info">
-         <p class="step_info_p">Jogging Track</p>
-      </div>
-   </div>
-
-    <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
-      <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-      <div class="step_info">
-         <p class="step_info_p">Jogging Track</p>
-      </div>
-   </div>
-
-    <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
-      <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-      <div class="step_info">
-         <p class="step_info_p">Jogging Track</p>
-      </div>
-   </div>
-</div>
-
-<!-- add slider -->
-
 
 <!-- company -->
 <section class="mt-100">
@@ -388,7 +431,8 @@
         <!-- New mobile slider (add this right after the desktop slider) -->
         <div class="mobile_slider">
             <div class="image" id="mobile-image">
-                <img src="{{ asset('public/front/images/dragger-new.webp') }}" class="img-fluid" alt="mobile-slider" id="mobile-img">
+                <img src="{{ asset('public/front/images/dragger-new.webp') }}" class="img-fluid" alt="mobile-slider"
+                    id="mobile-img">
             </div>
             <button id="toggle-btn" class="btn-enquire" style="margin-top: 20px;">Toggle View</button>
         </div>
@@ -403,30 +447,29 @@
             <div class="contact-form-wrapper">
                 <h2 class="about_title" style="color: #111;margin-bottom:20px;">CONTACT US</h2>
                 <form id="contactform" method="POST" action="{{ route('inquiry.submit') }}" novalidate>
-                                @csrf
+                    @csrf
 
                     <div class="form-group">
                         <label>Full Name <span class="text-primary">*</span></label>
                         <input type="text" id="full_name" name="full_name" maxlength="50"
-                                        oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').replace(/\s{2,}/g, ' ');"
-                                        placeholder="Enter your Full Name">
+                            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').replace(/\s{2,}/g, ' ');"
+                            placeholder="Enter your Full Name">
                         <span class="error" id="error-full_name"></span>
                     </div>
 
                     <div class="form-group">
                         <label>Email Address <span class="text-primary">*</span></label>
-                        <input type="email" id="email" name="email" maxlength="60"
-                                        placeholder="Enter your email">
-                                    <span class="error" id="error-email"></span>
-                        
+                        <input type="email" id="email" name="email" maxlength="60" placeholder="Enter your email">
+                        <span class="error" id="error-email"></span>
+
                     </div>
 
                     <div class="form-group">
                         <label>Contact Number <span class="text-primary">*</span></label>
                         <input type="text" id="phone" name="phone" maxlength="15"
-                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 15);"
-                                        placeholder="Enter your Mobile Number">
-                                    <span class="error" id="error-phone"></span>
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 15);"
+                            placeholder="Enter your Mobile Number">
+                        <span class="error" id="error-phone"></span>
                     </div>
                     <div class="form-group">
                         <label>Additional Notes </label>
@@ -458,30 +501,28 @@
                         {{-- <input type="hidden" name="interest" value="residences"> --}}
                     </div>
                     <div class="form_group">
-                                    
 
-                                    <div style="margin: 12px 0; display: flex; align-items: center; gap: 12px;">
-                                        <span id="captcha-text"
-                                            style="font-size: 12px; font-weight: bold; letter-spacing:1px; padding: 10px 10px;
+
+                        <div style="margin: 12px 0; display: flex; align-items: center; gap: 12px;">
+                            <span id="captcha-text"
+                                style="font-size: 12px; font-weight: bold; letter-spacing:1px; padding: 10px 10px;
                                                 background: #f8f8f8; border: 1px solid #aaa; border-radius: 8px;
                                                 user-select: none; cursor: pointer; min-width: 100px; text-align: center;">
-                                        </span>
+                            </span>
 
-                                        <button type="button" id="refresh-captcha"
-                                            style="font-size: 22px; width: 30px; height: 30px; border-radius: 50%;
+                            <button type="button" id="refresh-captcha" style="font-size: 22px; width: 30px; height: 30px; border-radius: 50%;
                                                 background: #f0f0f0; border: 1px solid #ccc; cursor: pointer;">
-                                            ↻
-                                        </button>
-                                    </div>
+                                ↻
+                            </button>
+                        </div>
 
-                                    <input type="text" id="captcha" name="captcha" maxlength="6" row="2"
-                                        placeholder="Enter the number" inputmode="numeric" autocomplete="off"
-                                        oninput="this.value = this.value.replace(/[^0-9]/g, '');"
-                                        style=" background: transparent; border: none; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; outline: none; "
-                                        >
+                        <input type="text" id="captcha" name="captcha" maxlength="6" row="2"
+                            placeholder="Enter the number" inputmode="numeric" autocomplete="off"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                            style=" background: transparent; border: none; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; outline: none; ">
 
-                                    <span id="error-captcha" class="error"></span>
-                                </div>
+                        <span id="error-captcha" class="error"></span>
+                    </div>
 
                     <button type="submit" id="submitBtn" class="btn-enquire">
                         <span>Submit Application</span>
@@ -535,7 +576,7 @@
         </div>
     </div>
 </section>
-    
+
 <script>
 function toggleDropdown() {
     document.getElementById('amenityOptions').classList.toggle('show');
@@ -593,7 +634,7 @@ function filterAmenities(name, slug) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     filterAmenities('All Amenities', 'all');
 });
 
@@ -615,7 +656,7 @@ document.addEventListener('click', function(e) {
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function () {
+$(document).ready(function() {
 
     if ($('.leding_slider').length && !$('.leding_slider').hasClass('slick-initialized')) {
         $('.leding_slider').slick({
@@ -633,11 +674,11 @@ $(document).ready(function () {
 
     // Disposable emails
     const disposableDomains = [
-        'mailinator.com','10minutemail.com','guerrillamail.com','tempmail.com',
-        'temp-mail.org','throwawaymail.com','maildrop.cc','dispostable.com',
-        'getairmail.com','moakt.com','spamgourmet.com','yopmail.com',
-        'sharklasers.com','mailnesia.com','fakemail.net','emailondeck.com',
-        'trashmail.com','mintemail.com','mytemp.email'
+        'mailinator.com', '10minutemail.com', 'guerrillamail.com', 'tempmail.com',
+        'temp-mail.org', 'throwawaymail.com', 'maildrop.cc', 'dispostable.com',
+        'getairmail.com', 'moakt.com', 'spamgourmet.com', 'yopmail.com',
+        'sharklasers.com', 'mailnesia.com', 'fakemail.net', 'emailondeck.com',
+        'trashmail.com', 'mintemail.com', 'mytemp.email'
     ];
 
     function isDisposableEmail(email) {
@@ -647,20 +688,21 @@ $(document).ready(function () {
 
     // CAPTCHA
     let captchaCode = "";
+
     function generateCaptcha() {
         captchaCode = Math.floor(100000 + Math.random() * 900000).toString();
         $('#captcha-text').text(captchaCode);
     }
     generateCaptcha();
 
-    $('#refresh-captcha, #captcha-text').click(function () {
+    $('#refresh-captcha, #captcha-text').click(function() {
         generateCaptcha();
         $('#captcha').val('');
         $('#error-captcha').text('');
     });
 
     // Clear error on input or change
-    $('#contactform input, #contactform textarea').on('input change', function () {
+    $('#contactform input, #contactform textarea').on('input change', function() {
         const id = this.id;
 
         // Normal inputs
@@ -675,7 +717,7 @@ $(document).ready(function () {
     });
 
     // Form submit
-    $('#contactform').on('submit', function (e) {
+    $('#contactform').on('submit', function(e) {
         e.preventDefault();
         let isValid = true;
         $('.error').text('');
@@ -691,12 +733,10 @@ $(document).ready(function () {
         if (!email) {
             $('#error-email').text('Please enter your email');
             isValid = false;
-        } 
-        else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) {
+        } else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) {
             $('#error-email').text('Please enter a valid email');
             isValid = false;
-        }
-        else if (isDisposableEmail(email)) {
+        } else if (isDisposableEmail(email)) {
             $('#error-email').text('Disposable emails not allowed');
             isValid = false;
         }
@@ -706,8 +746,7 @@ $(document).ready(function () {
         if (!phone) {
             $('#error-phone').text('Please enter your mobile number');
             isValid = false;
-        } 
-        else if (phone.length < 10 || phone.length > 15) {
+        } else if (phone.length < 10 || phone.length > 15) {
             $('#error-phone').text('Mobile number must be 10–15 digits');
             isValid = false;
         }
@@ -723,8 +762,7 @@ $(document).ready(function () {
         if (!enteredCaptcha) {
             $('#error-captcha').text('Please enter the captcha');
             isValid = false;
-        } 
-        else if (enteredCaptcha !== captchaCode) {
+        } else if (enteredCaptcha !== captchaCode) {
             $('#error-captcha').text('Please enter the correct captcha');
             $('#captcha').val('').focus();
             generateCaptcha();
