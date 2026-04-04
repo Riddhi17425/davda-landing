@@ -17,6 +17,7 @@ class Property extends Model
         'category_id',
         'title',
         'image',
+        'slider_images',
         'created_at',
         'updated_at',
         'deleted_at'

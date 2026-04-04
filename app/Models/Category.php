@@ -16,6 +16,7 @@ class Category extends Model
     protected $fillable = [
         'category_title',
         'url',
+        'slider_images'
     ];
 
    public function properties()

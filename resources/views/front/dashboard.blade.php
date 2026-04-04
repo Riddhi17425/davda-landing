@@ -281,9 +281,9 @@
                     <ul class="dropdown-options" id="amenityOptions">
                         <li onclick="filterAmenities('All Amenities', 'all')">All Amenities</li>
                         @foreach($categories as $cat)
-                        <li onclick="filterAmenities('{{ addslashes($cat->category_title) }}', '{{ $cat->url }}')">
-                            {{ $cat->category_title }}
-                        </li>
+                            <li onclick="filterAmenities('{{ addslashes($cat['category_title']) }}', '{{ $cat['url'] }}')">
+                                {{ $cat['category_title'] }}
+                            </li>
                         @endforeach
                     </ul>
                 </div>
@@ -303,99 +303,21 @@
     </div>
 
     <div class="container">
-        <div class="amenities-grid" id="amenity-grid">
+        <div class="the_life_main">
+
             @if($amenities->isEmpty())
-            <p class="text-center py-5">No amenities found.</p>
+                <p class="text-center py-5">No amenities found.</p>
             @else
-            @foreach($amenities as $item)
-            <div class="grid-item" data-category="{{ $item->category_slug }}" style="display:block;">
-                @php
-                $imgPath = '';
-                if (is_string($item->image)) {
-                $imgPath = trim($item->image);
-                } elseif (is_array($item->image) && !empty($item->image)) {
-                $imgPath = trim($item->image[0] ?? '');
-                }
+                {{-- LEFT SIDE SLIDER --}}
+                <div class="leding_slider" id="amenity-slider"></div>
 
-                $finalImage = '';
-                if ($imgPath) {
-                if (filter_var($imgPath, FILTER_VALIDATE_URL)) {
-                $finalImage = $imgPath; // external
-                } else {
-                $finalImage = asset('public/PropertyImage/' . ltrim($imgPath, '/')); // local
-                }
-                }
-                @endphp
+                {{-- RIGHT SIDE 4 IMAGES --}}
+                <div class="the_life_right" id="amenity-grid"></div>
 
-                @if($finalImage)
-                <img src="{{ $finalImage }}" alt="{{ $item->title }}" class="img-fluid">
-                @else
-                <div class="placeholder text-center py-4 bg-light rounded">
-                    <p>No image available</p>
-                </div>
-                @endif
-
-                <div class="step_info">
-                    <p class="step_info_p">{{ $item->title }}</p>
-                </div>
-            </div>
-            @endforeach
             @endif
         </div>
-
     </div>
 
-        <!-- add slider -->
-  <div class="container">
-    <div class="the_life_main">
-        <div class="leding_slider">
-            <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-            <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-            <div class="grid-item" data-category="bellevue-vieraaa" style="display: block;">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-        </div>
-        <div class="the_life_right">
-            <div class="grid-item">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="http://localhost/davda-landing/public/PropertyImage/Jogging Track.webp" alt="Jogging Track" class="img-fluid">
-                <div class="step_info">
-                <p class="step_info_p">Jogging Track</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 <!-- add slider -->
 
 </section>
@@ -576,74 +498,138 @@
         </div>
     </div>
 </section>
-
 <script>
-function toggleDropdown() {
-    document.getElementById('amenityOptions').classList.toggle('show');
-}
-
-function filterAmenities(name, slug) {
-    document.querySelector('.current-val').textContent = name;
-    document.getElementById('amenityOptions').classList.remove('show');
-
-    const items = Array.from(document.querySelectorAll('#amenity-grid .grid-item'));
-    let firstVisible = true;
-
-    if (slug === 'all') {
-
-        // ✅ Shuffle items randomly
-        let shuffled = items.sort(() => 0.5 - Math.random());
-
-        // Hide all first
-        items.forEach(item => {
-            item.style.display = 'none';
-            item.classList.remove('large');
-        });
-
-        // ✅ Show only first 5 random items
-        shuffled.slice(0, 5).forEach(item => {
-            item.style.display = 'block';
-
-            if (firstVisible) {
-                item.classList.add('large');
-                // item.classList.add('large');/---------------------------------
-                firstVisible = false;
-            }
-        });
-
-    } else {
-
-        items.forEach(item => {
-            const itemCategory = item.getAttribute('data-category');
-
-            if (itemCategory === slug) {
-                item.style.display = 'block';
-
-                if (firstVisible) {
-                    item.classList.add('large');
-                    firstVisible = false;
-                } else {
-                    item.classList.remove('large');
-                }
-
-            } else {
-                item.style.display = 'none';
-                item.classList.remove('large');
-            }
-        });
+    const categoriesData = @json($categories);
+    const amenitiesData = @json($amenities);
+</script>
+<script>
+    function toggleDropdown() {
+        document.getElementById('amenityOptions').classList.toggle('show');
     }
-}
 
-document.addEventListener('DOMContentLoaded', function() {
-    filterAmenities('All Amenities', 'all');
-});
-
-document.addEventListener('click', function(e) {
-    const trigger = document.getElementById('amenityTrigger');
-    if (!trigger.contains(e.target)) {
+    function filterAmenities(name, slug) {
+        document.querySelector('.current-val').textContent = name;
         document.getElementById('amenityOptions').classList.remove('show');
+
+        renderAmenities(slug);
     }
-});
+
+    function renderAmenities(slug) {
+        const sliderContainer = document.getElementById('amenity-slider');
+        const gridContainer = document.getElementById('amenity-grid');
+
+        sliderContainer.innerHTML = '';
+        gridContainer.innerHTML = '';
+
+        let leftSliderImages = [];
+        let rightGridImages = [];
+
+        // =========================
+        // LEFT SIDE => CATEGORY slider_images
+        // =========================
+        if (slug === 'all') {
+            categoriesData.forEach(cat => {
+                if (cat.slider_images && cat.slider_images.length > 0) {
+                    cat.slider_images.forEach(img => {
+                        leftSliderImages.push({
+                            title: img.replace(/\.[^/.]+$/, ""),
+                            image: img,
+                            category_slug: cat.url
+                        });
+                    });
+                }
+            });
+        } else {
+            const selectedCategory = categoriesData.find(cat => cat.url === slug);
+
+            if (selectedCategory && selectedCategory.slider_images.length > 0) {
+                selectedCategory.slider_images.forEach(img => {
+                    leftSliderImages.push({
+                        title: img.replace(/\.[^/.]+$/, ""),
+                        image: img,
+                        category_slug: selectedCategory.url
+                    });
+                });
+            }
+        }
+
+        // =========================
+        // RIGHT SIDE => PROPERTY images
+        // =========================
+        if (slug === 'all') {
+            rightGridImages = [...amenitiesData];
+        } else {
+            rightGridImages = amenitiesData.filter(item => item.category_slug === slug);
+        }
+
+        // Shuffle only if ALL
+        if (slug === 'all') {
+            leftSliderImages = shuffleArray(leftSliderImages);
+            rightGridImages = shuffleArray(rightGridImages);
+        }
+
+        // =========================
+        // LEFT SLIDER RENDER
+        // =========================
+        leftSliderImages.forEach(item => {
+            sliderContainer.innerHTML += `
+                <div class="grid-item">
+                    <img src="{{ asset('public/PropertyImage') }}/${item.image}" alt="${item.title}" class="img-fluid">
+                    <div class="step_info">
+                        <p class="step_info_p">${item.title}</p>
+                    </div>
+                </div>
+            `;
+        });
+
+        // =========================
+        // RIGHT GRID RENDER (ONLY 4)
+        // =========================
+        rightGridImages.slice(0, 4).forEach(item => {
+            gridContainer.innerHTML += `
+                <div class="grid-item">
+                    <img src="{{ asset('public/PropertyImage') }}/${item.image}" alt="${item.title}" class="img-fluid">
+                    <div class="step_info">
+                        <p class="step_info_p">${item.title}</p>
+                    </div>
+                </div>
+            `;
+        });
+
+        reInitSlider();
+    }
+
+    function shuffleArray(array) {
+        return array.sort(() => 0.5 - Math.random());
+    }
+
+    function reInitSlider() {
+        if ($('.leding_slider').hasClass('slick-initialized')) {
+            $('.leding_slider').slick('unslick');
+        }
+
+        $('.leding_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            arrows: false,
+            dots: false,
+            infinite: true,
+            adaptiveHeight: true
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        filterAmenities('All Amenities', 'all');
+    });
+
+    document.addEventListener('click', function(e) {
+        const trigger = document.getElementById('amenityTrigger');
+        if (trigger && !trigger.contains(e.target)) {
+            document.getElementById('amenityOptions').classList.remove('show');
+        }
+    });
 </script>
 <style>
 .error {

@@ -48,23 +48,54 @@ class dashboardController extends Controller
     //     return view('front.dashboard', compact('categories', 'amenities'));
     // }
 
+   
+    // riddhi backup
+    // public function index(Request $request)
+    // {
+    //     $categories = Category::select('id', 'category_title', 'url')
+    //         ->orderBy('id')
+    //         ->get();
+    
+    //     $amenities = Property::select('title', 'image', 'category_id')
+    //         ->with('category:id,url')
+    //         ->get()
+    //         ->map(function($prop) {
+    //             return (object) [
+    //                 'title'         => $prop->title,
+    //                 'image'         => $prop->image,
+    //                 'category_slug' => $prop->category ? $prop->category->url : 'all',
+    //             ];
+    //         });
+    //     // return $amenities->slider_images;
+    //     return view('front.dashboard', compact('categories', 'amenities'));
+    // }
+
     public function index(Request $request)
     {
-        $categories = Category::select('id', 'category_title', 'url')
+        $categories = Category::select('id', 'category_title', 'url', 'slider_images')
             ->orderBy('id')
-            ->get();
-    
-        $amenities = Property::select('title', 'image', 'category_id')
+            ->get()
+            ->map(function ($cat) {
+                return [
+                    'id'            => $cat->id,
+                    'category_title'=> $cat->category_title,
+                    'url'           => $cat->url,
+                    'slider_images' => $cat->slider_images ? json_decode($cat->slider_images, true) : [],
+                ];
+            });
+
+        $amenities = Property::select('id', 'title', 'image', 'category_id')
             ->with('category:id,url')
             ->get()
-            ->map(function($prop) {
-                return (object) [
+            ->map(function ($prop) {
+                return [
+                    'id'            => $prop->id,
                     'title'         => $prop->title,
                     'image'         => $prop->image,
                     'category_slug' => $prop->category ? $prop->category->url : 'all',
                 ];
             });
-    
+
         return view('front.dashboard', compact('categories', 'amenities'));
     }
 
