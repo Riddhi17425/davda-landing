@@ -263,7 +263,7 @@
 
 </section>
 
-<!-- Lifestyle Section -->
+
 <!-- Lifestyle Section -->
 <section id="aminities" class="lifestyle-section">
     <div class="container">
@@ -664,7 +664,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3500,
-            arrows: true,
+            arrows: false,
             dots: false,
             infinite: true,
             pauseOnHover: false,

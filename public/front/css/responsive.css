@@ -280,6 +280,7 @@
     .ft_bottom>div:nth-child(3) {
         order: 2;
     }
+    
 
 }
 
@@ -374,6 +375,18 @@
 
     .ft_bottom {
         text-align: center;
+    }
+
+    .the_life_main {
+    flex-direction: column;
+    }
+
+    .the_life_right {
+    width: 100%;
+    }
+
+    .leding_slider {
+        width: 100%;
     }
 }
 
