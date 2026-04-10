@@ -19,6 +19,10 @@ class Category extends Model
         'slider_images'
     ];
 
+    protected $casts = [
+        'slider_images' => 'array',
+    ];
+
    public function properties()
 {
     return $this->hasMany(Property::class);

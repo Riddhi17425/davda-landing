@@ -33,24 +33,24 @@ use App\Http\Controllers\CaptchaController;
   
     Route::get('/captcha-image', [CaptchaController::class, 'image'])->name('captcha.image');  
     
-Route::get('login', [dashboardController::class, 'login'])->name('login');
-Auth::routes();
+    Route::get('login', [dashboardController::class, 'login'])->name('login');
+    Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/user', [usersController::class, 'user'])->name('user');
- Route::get('/admin/dashboard',[dashboardController::class, 'admin'])->name('/admin/dashboard');
- Route::get('/superAdmin', [superAdminController::class, 'superAdmin'])->name('superAdmin');  
+    Route::group(['middleware' => 'auth'], function () {
+        Route::get('/user', [usersController::class, 'user'])->name('user');
+        Route::get('/admin/dashboard',[dashboardController::class, 'admin'])->name('/admin/dashboard');
+        Route::get('/superAdmin', [superAdminController::class, 'superAdmin'])->name('superAdmin');  
 
- 	Route::get('/admin/dashboard', [adminController::class, 'admin'])->name('admin/dashboard');
+        Route::get('/admin/dashboard', [adminController::class, 'admin'])->name('admin/dashboard');
 
-    Route::resource('category', CategoryController::class);
-    Route::resource('blog', BlogController::class);
-    Route::resource('property', PropertyController::class);
-Route::prefix('backend')->group(function () {
-	// Route::get('home', [adminController::class, 'index'])->name('home');
-});
+        Route::resource('category', CategoryController::class);
+        Route::resource('blog', BlogController::class);
+        Route::resource('property', PropertyController::class);
+        Route::prefix('backend')->group(function () {
+        // Route::get('home', [adminController::class, 'index'])->name('home');
+        });
 
 
-});
+    });
