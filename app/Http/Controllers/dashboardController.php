@@ -76,11 +76,15 @@ class dashboardController extends Controller
             ->orderBy('id')
             ->get()
             ->map(function ($cat) {
+                $sliderImages = is_array($cat->slider_images)
+                    ? $cat->slider_images
+                    : ($cat->slider_images ? json_decode($cat->slider_images, true) : []);
+
                 return [
                     'id'            => $cat->id,
                     'category_title'=> $cat->category_title,
                     'url'           => $cat->url,
-                    'slider_images' => $cat->slider_images ? json_decode($cat->slider_images, true) : [],
+                    'slider_images' => is_array($sliderImages) ? $sliderImages : [],
                 ];
             });
 

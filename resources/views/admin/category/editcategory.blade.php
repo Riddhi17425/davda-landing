@@ -19,6 +19,9 @@
         <form method="post" enctype="multipart/form-data" action="{{ route('category.update',$data->id) }}">
             @csrf
             @method('PATCH')
+            @php
+                $existingImages = is_array($data->slider_images) ? $data->slider_images : json_decode($data->slider_images, true) ?? [];
+            @endphp
             <div class="row g-3 mb-3">
                 <div class="col-lg-12">
                     <div class="card mb-3">
@@ -30,7 +33,7 @@
                                 <div class="col-md-6">
                                     <label class="form-label">Title</label>
                                     <input type="text" id="category_title" name="category_title" class="form-control"
-                                        value="{{ $data->category_title }}" placeholder="propertydetail Title">
+                                        value="{{ old('category_title', $data->category_title) }}" placeholder="Category Title">
                                     @if ($errors->has('category_title'))
                                     <span class="text-danger">{{ $errors->first('category_title') }}</span>
                                     @endif
@@ -38,11 +41,12 @@
                                 <div class="col-md-6">
                                     <label class="form-label">URL</label>
                                     <input type="text" id="url" name="url" class="form-control"
-                                        value="{{ $data->url }}" placeholder="propertydetail url">
+                                        value="{{ old('url', $data->url) }}" placeholder="Category URL">
                                     @if ($errors->has('url'))
                                     <span class="text-danger">{{ $errors->first('url') }}</span>
                                     @endif
                                 </div>
+                                @include('admin.category.partials.image-manager', ['existingImages' => $existingImages])
                             </div>
                         </div>
                     </div>
@@ -70,6 +74,57 @@
     href="{!! asset('public/admin_public/dist/assets/plugin/datatables/responsive.dataTables.min.css') !!}">
 <link rel="stylesheet"
     href="{!! asset('public/admin_public/dist/assets/plugin/datatables/dataTables.bootstrap5.min.css') !!}">
+<style>
+    .category-image-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .category-image-card {
+        position: relative;
+        border: 1px solid #dfe3ea;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .category-image-card img {
+        display: block;
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .category-image-card-body {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+        color: #495057;
+        word-break: break-word;
+    }
+
+    .category-image-remove {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 28px;
+        height: 28px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(33, 37, 41, 0.8);
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .category-image-empty {
+        border: 1px dashed #c7ced8;
+        border-radius: 12px;
+        padding: 1rem;
+        color: #6c757d;
+        text-align: center;
+    }
+</style>
 @endpush
 
 @push('scripts')
@@ -82,6 +137,7 @@
 </script>
 <script src="{!! asset('public/admin_public/dist/assets/bundles/dropify.bundle.js') !!}"></script>
 <script src="{!! asset('public/admin_public/dist/assets/bundles/dataTables.bundle.js') !!}"></script>
+<script src="{{ asset('public/admin/category/category-images.js') }}"></script>
 
 
 <script>
